@@ -663,12 +663,13 @@ class HealthDashboard extends React.Component<IHealthDashboardProps,IHealthDashb
         return <div className='root'>
             <div className='header'>
                 <a href='/' className='logo'></a>
-                <div className='title'>Health Monitor</div>
+                <div className='title'>Employee health management</div>
                 <div className='padder'>
 
                 </div>
             </div>
             <div className='toolbar'>
+               
                 <div className='countries ddl'>
                     <div className='txt'>{this.state.countryFilter || 'All Countries'}</div>
                     <select value={this.state.countryFilter} onChange={(e)=>{
@@ -681,6 +682,12 @@ class HealthDashboard extends React.Component<IHealthDashboardProps,IHealthDashb
                             })
                         }
                     </select>
+                </div>
+                <div className="search_bar">
+                    <input type="text" placeholder="Search" /><span className="search_icon" /> 
+                </div>
+                <div className="refresh_bar"> Refresh Now
+                    <span className="refresh_icon" /> 
                 </div>
             </div>
             <div className='data-section'>

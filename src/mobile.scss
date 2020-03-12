@@ -14,9 +14,11 @@
 
          .logo {
              @media screen and (max-width: $break-small) {
-                 width: 100%;
-                 text-align: center;
-                 background-position: center center;
+                width: 100%; 
+                text-align: center;
+                background-position: center center;
+                background-size: 37%;
+                height: 2em;
              }
          }
 
@@ -38,6 +40,7 @@
              width: 84%;
              margin-left: 8%;
              margin-top: 3em;
+             height: 120px;
          }
 
          .countries.ddl {
@@ -67,6 +70,7 @@
                  margin-top: 0em;
                  position: inherit;
                  width: 30.5%;
+                 display: inline-block;
              }
 
              @media screen and (max-width: $break-small) {
@@ -216,3 +220,20 @@
          }
      }
  }
+
+
+ .search_bar {
+    @media screen and (max-width: $break-small) {
+        width: 49%;
+        margin-left: 0;
+        margin-top: 0.8em;
+    }  
+}
+ 
+.refresh_bar {
+    @media screen and (max-width: $break-small) {
+        width: 49%;
+        margin-left: 2%;
+        margin-top: 1.2em;
+    } 
+}
